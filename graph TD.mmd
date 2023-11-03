@@ -1,0 +1,12 @@
+graph TD
+A[User Input] -->|Kann Begriffe mit Icons und Definition Hinzufügen| B(wird auf Profanitys geprüft)
+subgraph App
+B --> C{Begriffs Bibliothek}
+G[Profanity Filter API für Flutter] --> B
+D[Interne Standart Bibiothek an ca 50 Begriffen] --> C
+C -->|Begriffen können aus der App Exportiert werden| E(Erstellen von QR Codes)
+
+C --> H[Quiz für Begriffe] --> I(Nutzer bekommen nur das Bild oder die Erklärung der App gezeig und Müssen den Beriff unter einer Auswahl selektieren)
+end
+
+E --> F[Begriffssharing mit anderen Nutzern]
